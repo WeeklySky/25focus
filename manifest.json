@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "25Focus",
+  "description": "Increase your productivity with the pomodoro technique. Blocks distracting websites for 25 minutes, then unblocks for 5 minutes.",
+  "version": "1.0",
+  "permissions": [
+    "alarms",
+    "tabs",
+    "bookmarks",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  }
+}
